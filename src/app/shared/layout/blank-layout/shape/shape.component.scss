@@ -1,0 +1,39 @@
+//shape section
+.shape {
+  background-color: currentColor;
+  pointer-events: none;
+  position: absolute;
+}
+.shape-fluid-x {
+  width: 100%;
+}
+.shape-img {
+  top: inherit;
+  overflow: hidden;
+  position: inherit;
+  width: inherit;
+}
+.shape-img > svg {
+  height: 100%;
+  position: inherit;
+  transform: scale(2);
+  width: 100%;
+}
+.shape-top {
+  bottom: 100%;
+}
+.shape-top .shape-img {
+  bottom: inherit;
+}
+.shape-top .shape-img > svg {
+  bottom: 0;
+  transform-origin: top center;
+}
+.shape-bottom {
+  top: 100%;
+}
+.shape-bottom .shape-img > svg {
+  top: 0;
+  transform-origin: bottom center;
+  vertical-align: middle;
+}

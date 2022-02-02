@@ -1,0 +1,26 @@
+//cards section
+
+// .text-stripe {
+//   color: #6772e5 !important;
+// }
+// .text-digital-ocean {
+//   color: #2485fd !important;
+// }
+// .text-airbnb {
+//   color: #ff385c !important;
+// }
+// .text-coinbase {
+//   color: #0081c9 !important;
+// }
+// .text-netflix {
+//   color: #b81d24 !important;
+// }
+.stretched-link:after {
+  bottom: 0;
+  content: "";
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 1;
+}

@@ -1,0 +1,52 @@
+//navbar
+.navbar {
+  padding-bottom: 2rem;
+  padding-top: 2rem;
+  position: relative;
+}
+.navbar:before {
+  -o-border-image: linear-gradient(
+      90deg,
+      #575a7b,
+      #575a7b 20%,
+      #f9655b 0,
+      #f9655b 40%,
+      #f5c070 0,
+      #f5c070 60%,
+      #6658ea 0,
+      #6658ea 80%,
+      #fcc 0
+    )
+    1;
+  border-image: linear-gradient(
+      90deg,
+      #575a7b,
+      #575a7b 20%,
+      #f9655b 0,
+      #f9655b 40%,
+      #f5c070 0,
+      #f5c070 60%,
+      #6658ea 0,
+      #6658ea 80%,
+      #fcc 0
+    )
+    1;
+  border-width: 0;
+  border-top: 4px solid;
+  content: "";
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+//add some styles in bootstrap classes
+.nav-link:hover,
+.nav-link.active {
+  color: #6646e8 !important;
+  font-weight: 600;
+}
+@media screen and (min-width: 992px) {
+  .nav-link {
+    padding: 0.5rem 1.875rem !important;
+  }
+}

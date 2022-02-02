@@ -1,0 +1,24 @@
+<div [class]="getCssClasses()">
+
+  <div class="shape-img pb-9 pb-md-15" *ngIf="banner">
+    <svg viewBox="0 0 100 50" preserveAspectRatio="none">
+      <path d="M0 0h100v25H75L25 50H0z" fill="currentColor"></path>
+    </svg>
+  </div>
+  <div class="shape-img pb-9 mb-md-14" *ngIf="darkSec">
+    <svg viewBox="0 0 100 50" preserveAspectRatio="none">
+      <path d="M0 0h100v50H75L25 25H0z" fill="currentColor"></path>
+    </svg>
+  </div>
+  <div class="shape-img pb-4" *ngIf="card">
+    <svg viewBox="0 0 100 50" preserveAspectRatio="none">
+      <path d="M0 25h25L75 0h25v50H0z" fill="currentColor"></path>
+    </svg>
+  </div>
+  <div class="shape-img pb-9 pb-md-14" *ngIf="cardDark">
+    <svg viewBox="0 0 100 50" preserveAspectRatio="none">
+      <path d="M0 25h25L75 0h25v50H0z" fill="currentColor"></path>
+    </svg>
+  </div>
+
+</div>

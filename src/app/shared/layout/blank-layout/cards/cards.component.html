@@ -1,0 +1,31 @@
+<div class="flickity-viewport-visible mx-n4"
+  [flickity]='{"cellAlign": "left", "imagesLoaded": true, "pageDots": false, "prevNextButtons": false, "contain": true}'>
+  <div class="col-12 px-4" style="max-width: 300px;" *ngFor='let card of cards'>
+    <div class="card  rounded-top-start rounded-bottom-end lift">
+      <!-- Image  -->
+      <img class="card-img rounded-top-start" [src]="card.image" [alt]="card.name">
+      <!-- SHAPE -->
+      <div class="position-relative">
+        <app-shape [card]="true" [banner]="false" [darkSec]="false"></app-shape>
+      </div>
+      <!-- Body -->
+      <div class="card-body">
+        <!-- Heading -->
+        <div class="d-flex align-items-center mb-3">
+          <!-- Logo -->
+          <div class="img-fluid mb-0" style="max-width:70px">
+            <img [src]='card.svg' [alt]='card.name'>
+          </div>
+          <!-- Icon -->
+          <a class="ms-auto text-decoration-none text-stripe stretched-link" href="#!">
+            <i class="fas fa-arrow-right"></i>
+          </a>
+        </div>
+        <!-- Text -->
+        <small>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. In urna lectus, mattis non.
+        </small>
+      </div>
+    </div>
+  </div>
+</div>

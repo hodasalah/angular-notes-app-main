@@ -1,0 +1,15 @@
+//welcome bannar
+.bg-light {
+  background-color: #f3f8ff !important;
+}
+
+@media (min-width: 768px) {
+  //image welcome banner
+  .offset-md-n3 {
+    margin-left: -25%;
+  }
+  .mw-md-125 {
+    max-width: 125% !important;
+  }
+  //welcome text
+}

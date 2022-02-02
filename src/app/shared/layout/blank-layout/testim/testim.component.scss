@@ -1,0 +1,13 @@
+.avatar {
+  display: inline-block;
+  font-size: 1.33333rem;
+  height: 4rem;
+  position: relative;
+  width: 4rem;
+  &-img {
+    height: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+    width: 100%;
+  }
+}

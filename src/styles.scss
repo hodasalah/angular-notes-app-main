@@ -1,0 +1,471 @@
+/* You can add global styles to this file, and also import other style files */
+
+/* Importing Bootstrap SCSS file. */
+@import "~bootstrap/scss/bootstrap";
+
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans&family=DM+Serif+Display&display=swap");
+// @import "~@fortawesome/fontawesome-free/css/all.min.css";
+//var
+$bs-body-font-size: 1.125rem;
+$bs-body-font-weight: 400;
+$bs-body-line-height: 1.6;
+$bs-body-color: #1b1642;
+$bs-body-bg: #fff;
+$bs-body-font-family: "DM Sans", sans-serif;
+$bs-gradient: linear-gradient(
+  180deg,
+  rgba(255, 255, 255, 0.15),
+  rgba(255, 255, 255, 0)
+);
+.bg-dark {
+  background-color: #1b1642 !important;
+}
+.bg-gray-800 {
+  background-color: #342e6c !important;
+}
+//global classes
+.row {
+  --bs-gutter-x: 32px;
+  --bs-gutter-y: 0;
+}
+.g-0,
+.gx-0 {
+  --bs-gutter-x: 0 !important;
+}
+.pb-8 {
+  padding-bottom: 3rem !important;
+}
+.pt-6 {
+  padding-top: 2rem !important;
+}
+.pt-10 {
+  padding-top: 5rem !important;
+}
+.pb-10 {
+  padding-bottom: 5rem !important;
+}
+.pt-8 {
+  padding-top: 3rem !important;
+}
+.pt-12 {
+  padding-top: 8rem !important;
+}
+.pb-9 {
+  padding-bottom: 4rem !important;
+}
+.pb-15 {
+  padding-bottom: 14rem !important;
+}
+.py-8 {
+  padding-bottom: 3rem !important;
+  padding-top: 3rem !important;
+}
+.py-10 {
+  padding-bottom: 5rem !important;
+  padding-top: 5rem !important;
+}
+.py-12 {
+  padding-bottom: 8rem !important;
+  padding-top: 8rem !important;
+}
+.mb-6 {
+  margin-bottom: 2rem !important;
+}
+.mb-8 {
+  margin-bottom: 3rem !important;
+}
+.mb-9 {
+  margin-bottom: 4rem !important;
+}
+.fs-lg {
+  font-size: 1.25rem !important;
+}
+.fs-sm {
+  font-size: 1rem !important;
+}
+.mt-n1 {
+  margin-top: -0.25rem !important;
+}
+.me-n8 {
+  margin-right: -3rem !important;
+}
+.ms-n10 {
+  margin-left: -5rem !important;
+}
+
+.mb-n10 {
+  margin-bottom: -5rem !important;
+}
+.fw-bold {
+  font-weight: 500 !important;
+}
+.ms-3 {
+  margin-left: 0.75rem !important;
+}
+
+.mt-n8 {
+  margin-top: -3rem !important;
+}
+.mx-n4 {
+  margin-left: -1rem !important;
+  margin-right: -1rem !important;
+}
+.mb-10 {
+  margin-bottom: 5rem !important;
+}
+//border
+.rounded-top-start {
+  border-top-left-radius: 1rem !important;
+}
+.rounded-bottom-end {
+  border-bottom-right-radius: 1rem !important;
+}
+.rounded-top-start-3 {
+  border-top-left-radius: 2rem !important;
+}
+.rounded-bottom-end-3 {
+  border-bottom-right-radius: 2rem !important;
+}
+.border-top-3 {
+  border-top: 3px solid #eaf2fe !important;
+}
+.border-primary {
+  border-color: #6658ea !important;
+}
+.border-white-5 {
+  border-color: rgba(255, 255, 255, 0.05) !important;
+}
+.rounded {
+  border-radius: 1rem !important;
+}
+// shadow
+.shadow-lg {
+  box-shadow: 0 0 24px rgba(27, 22, 66, 0.04),
+    0 44px 74px rgba(27, 22, 66, 0.06) !important;
+}
+@media (min-width: 1200px) {
+  .py-xl-12 {
+    padding-bottom: 8rem !important;
+    padding-top: 8rem !important;
+  }
+}
+
+@media (min-width: 768px) {
+  .pb-md-9 {
+    padding-bottom: 4rem !important;
+  }
+  .pt-md-8 {
+    padding-top: 3rem !important;
+  }
+  .pt-md-11 {
+    padding-top: 6rem !important;
+  }
+  .pt-md-12 {
+    padding-top: 8rem !important;
+  }
+  .pb-md-15 {
+    padding-bottom: 14rem !important;
+  }
+  .pt-md-16 {
+    padding-top: 16rem !important;
+  }
+  .pb-md-12 {
+    padding-bottom: 8rem !important;
+  }
+  .pb-md-4 {
+    padding-bottom: 1rem !important;
+  }
+  .py-md-12 {
+    padding-bottom: 8rem !important;
+    padding-top: 8rem !important;
+  }
+  .py-md-10 {
+    padding-bottom: 5rem !important;
+    padding-top: 5rem !important;
+  }
+  .py-md-16 {
+    padding-bottom: 16rem !important;
+    padding-top: 16rem !important;
+  }
+  .mb-md-12 {
+    margin-bottom: 8rem !important;
+  }
+  .mt-md-n12 {
+    margin-top: -8rem !important;
+  }
+  .mb-md-14 {
+    margin-bottom: 12rem !important;
+  }
+  .text-md-start {
+    text-align: left !important;
+  }
+}
+.display-4 {
+  font-size: 3rem;
+}
+.text-light {
+  color: #f3f8ff !important;
+}
+.text-warning {
+  color: #f5c070 !important;
+}
+.text-primary-light {
+  color: #687ded !important;
+}
+.text-white-80 {
+  color: rgba(255, 255, 255, 0.8) !important;
+}
+.text-white-60 {
+  color: rgba(255, 255, 255, 0.6) !important;
+}
+.text-underline-warning {
+  background: repeat-x left 1em/1em 0.15em;
+  background-image: linear-gradient(
+    90deg,
+    rgba(245, 192, 112, 0.4),
+    rgba(245, 192, 112, 0.4)
+  );
+}
+.font-sans-serif {
+  font-family: "DM Sans", sans-serif !important;
+}
+//position
+.bottom-start {
+  left: 0 !important;
+}
+.bottom-end {
+  right: 0 !important;
+}
+.bottom-end,
+.bottom-start {
+  bottom: 0 !important;
+  transform: none !important;
+}
+.top-end {
+  right: 0 !important;
+}
+.top-end,
+.top-start {
+  top: 0 !important;
+  transform: none !important;
+}
+//bootstrap restyle
+.card {
+  box-shadow: 0 0 24px rgb(27 22 66 / 4%), 0 44px 74px rgb(27 22 66 / 6%);
+  border: 0 solid rgba(27, 22, 66, 0.125);
+}
+.card-body {
+  padding: 2rem;
+}
+@media screen and (min-width: 920px) {
+  .card-body {
+    padding: 3rem;
+  }
+}
+
+.card-img,
+.card-img-bottom {
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+.card-footer {
+  padding: 2rem 3rem;
+}
+@media (min-width: 992px) {
+  .card-footer {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+}
+.img-fluid > * {
+  width: 100%;
+}
+@media (min-width: 992px) {
+  .card-sm .card-body {
+    padding: 2rem;
+  }
+}
+
+.bg-warning {
+  background-color: #f5c070 !important;
+}
+.text-muted {
+  color: #575a7b !important;
+}
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .container-lg {
+    max-width: 90%;
+  }
+}
+
+*,
+*:after,
+*:before {
+  box-sizing: border-box;
+}
+html {
+  font-size: 16px;
+}
+body {
+  background-color: $bs-body-bg;
+  color: $bs-body-color;
+  font-family: $bs-body-font-family;
+  font-size: $bs-body-font-size;
+  font-weight: $bs-body-font-weight;
+  line-height: $bs-body-line-height;
+  margin: 0;
+  overflow-x: hidden;
+}
+a,
+a:hover {
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "DM Serif Display", serif;
+}
+h6.text-uppercase {
+  font-family: " DM Sans", sans-serif;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+}
+p {
+  margin-bottom: 2rem;
+
+  margin-top: 0;
+}
+// button primary style
+.btn {
+  border: 1px solid transparent;
+  border-radius: 0.5rem 0 0.5rem 0;
+  font-size: 1.125rem;
+  padding: 0.75rem 1.75rem;
+  font-weight: 500;
+  box-shadow: 0 0 6px rgb(27 22 66 / 3%), 0 14px 24px rgb(27 22 66 / 6%);
+  transition: all 0.3s ease-in-out;
+
+  &-white {
+    background-color: #fff;
+    color: #6658ea;
+    &:hover {
+      color: #5546e8;
+    }
+  }
+  &-primary {
+    background-color: #6658ea;
+  }
+  &-primary-light {
+    background-color: #687ded;
+    border-color: #687ded;
+    color: #fff;
+    &:hover {
+      color: #fff;
+    }
+  }
+  &:hover {
+    box-shadow: 0 1rem 2.5rem rgba(27, 22, 66, 0.1),
+      0 0.5rem 1rem -0.75rem rgba(27, 22, 66, 0.1) !important;
+    transform: translate3d(0, -3px, 0);
+  }
+}
+.lift {
+  transition: box-shadow 0.25s ease, transform 0.25s ease;
+
+  &:focus,
+  &:hover {
+    box-shadow: 0 1rem 2.5rem rgba(27, 22, 66, 0.1),
+      0 0.5rem 1rem -0.75rem rgba(27, 22, 66, 0.1) !important;
+    transform: translate3d(0, -3px, 0);
+  }
+}
+//bootstrap classes with some edit
+
+.hr-sm {
+  margin-top: 0;
+  max-width: 5rem;
+  height: 5px !important;
+  opacity: 1;
+}
+// flickity carousel
+.flickity-buttons-responsive .flickity-button {
+  display: none;
+}
+.flickity-button {
+  background-color: #6658ea;
+  border-color: #6658ea;
+  border-radius: 0;
+  box-shadow: 0 0 6px rgb(27 22 66 / 3%), 0 14px 24px rgb(27 22 66 / 6%);
+  color: #fff;
+  height: 3.75rem;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  width: 3.75rem;
+  z-index: 1;
+  &:hover {
+    background-color: #5558ea;
+    border-color: #5558ea;
+  }
+}
+.flickity-button.previous {
+  left: 0;
+}
+.flickity-button.next {
+  right: 0;
+}
+
+.flickity-page-dots {
+  position: relative;
+  .dot {
+    background-color: #dce0f3 !important;
+    height: 0.5rem;
+    margin: 0.2rem;
+    opacity: 1;
+    width: 0.5rem;
+  }
+  .dot.is-selected {
+    background-color: #6658ea !important;
+  }
+}
+@media (min-width: 768px) {
+  .flickity-buttons-responsive .flickity-button {
+    display: block;
+  }
+  .flickity-buttons-responsive .flickity-page-dots {
+    display: none;
+  }
+}
+//footer
+.border-multicolor {
+  -o-border-image: linear-gradient(
+      90deg,
+      #575a7b,
+      #575a7b 20%,
+      #f9655b 0,
+      #f9655b 40%,
+      #f5c070 0,
+      #f5c070 60%,
+      #6658ea 0,
+      #6658ea 80%,
+      #fcc 0
+    )
+    1;
+  border-image: linear-gradient(
+      90deg,
+      #575a7b,
+      #575a7b 20%,
+      #f9655b 0,
+      #f9655b 40%,
+      #f5c070 0,
+      #f5c070 60%,
+      #6658ea 0,
+      #6658ea 80%,
+      #fcc 0
+    )
+    1;
+  border-width: 0;
+  border-top: 4px solid;
+}
